@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>Game Search - A PHP Website</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c8922a2162" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Kauê Gimenes" href="../rss/index.html">
+<link rel="canonical" href="http://kauegimenes.github.io/game-search-a-php-website/" />
+</head>
+<body class="post-template">
+
+    
+    
+
+
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        
+        <header class="post-header">
+            <a class="blog-logo" href="http://kauegimenes.github.io">
+                
+                    <span class="blog-title">Kauê Gimenes</span>
+                
+            </a>
+        </header>
+
+        
+        
+
+            <span class="post-meta"><time datetime="2014-05-12">12 May 2014</time> </span>
+
+            <h1 class="post-title">Game Search - A PHP Website</h1>
+
+            <section class="post-content">
+                <p><strong>Game Search</strong> is a website that implements diferent sources in order to provide information about a computer or console game, with this information the user is able to determine if a game is <strong>good or not</strong>.</p>
+
+<h3 id="code">Code</h3>
+
+<p>This project was developed using <strong>PHP</strong> and works <strong>without a Database</strong>, all the data is supplied by multiple sources:</p>
+
+<ul>
+<li><strong>Twitch.TV</strong> (Game Realtime Popularity)</li>
+<li><strong>Metacritic</strong> (Game Information and Score)</li>
+<li><strong>Google</strong> (Keyword Popularity by Time)</li>
+</ul>
+
+<p>Its possible to extract the information from this sources using php <strong>curl</strong> function.</p>
+
+<p><strong>Curl Example:</strong></p>
+
+<p><code>function get_data($url) {
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
+}</code></p>
+
+<h3 id="why">Why</h3>
+
+<p>The idea behind this project was to create a site that shows if a game is <strong>good or not</strong> based on <strong>external resourses</strong>, including Twitch Popularity and Google Popularity</p>
+
+<h3 id="preview">Preview</h3>
+
+<pre><code>This image shows a working version of the website
+</code></pre>
+
+<p><img src="../content/images/2014/May/GameSearch1.png" alt="" /></p>
+
+<pre><code>This is a poor version of the Home Page
+</code></pre>
+
+<p><img src="../content/images/2014/May/GameSearch2.png" alt="" /></p>
+
+<pre><code>The Twitch Popularity and Score Information
+</code></pre>
+
+<p><img src="../content/images/2014/May/GameSearch3.png" alt="" /></p>
+            </section>
+
+            <footer class="post-footer">
+
+                <section class="author">
+                    <h4>Kauê Gimenes</h4>
+                    <p></p>
+                    <ul class="author-meta clearfix">
+                        <li>São Paulo, Brasil</li>
+                        
+                    </ul>
+                </section>
+
+                <section class="share">
+                    <h4>Share this post</h4>
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Game%20Search%20-%20A%20PHP%20Website&amp;url=http://kauegimenes.github.io/game-search-a-php-website/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://kauegimenes.github.io/game-search-a-php-website/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://kauegimenes.github.io/game-search-a-php-website/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+
+            </footer>
+
+        
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="http://kauegimenes.github.io/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="http://kauegimenes.github.io/">Kauê Gimenes</a> &copy; 2014 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    
+    <script src="../public/jquery.js?v=c8922a2162"></script>
+
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=c8922a2162"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=c8922a2162"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kauê Gimenes]]></title><description><![CDATA[.Net Developer]]></description><link>http://kauegimenes.github.io/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Fri, 16 May 2014 22:37:00 GMT</lastBuildDate><atom:link href="http://kauegimenes.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Shipping Price - A C# Crawler]]></title><description><![CDATA[<p><strong>Shipping Price</strong> shows real time information about shipping price for diferent online retailers, with this tool they are able to check and ajust the shipping price policy to the market. </p>
+
+<h3 id="code">Code</h3>
+
+<p>This project was divided in two parts: <br />
+The crawler that gets data of multiple websites and generate a xml output, its developed using C# and is  scheduled to run multiple times during the day, to <strong>recive</strong> data and <strong>update</strong> the dashboard. <br />
+The Dashboard was developed using <strong>PHP</strong> and its integrated with the <strong>C#</strong> using a <strong>XML</strong> file, the role of this part is to show all the information to use user. </p>
+
+<h3 id="why">Why</h3>
+
+<p>The main goal of this project is to offer real time information about shipping price. By using real time data, online retailers can check if its shipping price policy is compatible with the market.</p>
+
+<h3 id="preview">Preview</h3>
+
+<pre><code>Main dashboard developed in PHP
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/ShippingPriceCrawler1.png'  alt="" /></p>
+
+<pre><code>C# Crawler console running with debug information
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/ShippingPriceCrawler2.png'  alt="" /></p>]]></description><link>http://kauegimenes.github.io/shipping-price-a-c-crawler/</link><guid isPermaLink="false">1d8ff9d6-4a74-428c-a5c1-31c8cd6bbbf7</guid><dc:creator><![CDATA[Kauê Gimenes]]></dc:creator><pubDate>Fri, 16 May 2014 22:30:05 GMT</pubDate></item><item><title><![CDATA[Game Search - A PHP Website]]></title><description><![CDATA[<p><strong>Game Search</strong> is a website that implements diferent sources in order to provide information about a computer or console game, with this information the user is able to determine if a game is <strong>good or not</strong>.</p>
+
+<h3 id="code">Code</h3>
+
+<p>This project was developed using <strong>PHP</strong> and works <strong>without a Database</strong>, all the data is supplied by multiple sources:</p>
+
+<ul>
+<li><strong>Twitch.TV</strong> (Game Realtime Popularity)</li>
+<li><strong>Metacritic</strong> (Game Information and Score)</li>
+<li><strong>Google</strong> (Keyword Popularity by Time)</li>
+</ul>
+
+<p>Its possible to extract the information from this sources using php <strong>curl</strong> function.</p>
+
+<p><strong>Curl Example:</strong></p>
+
+<p><code>function get_data($url) {
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
+}</code></p>
+
+<h3 id="why">Why</h3>
+
+<p>The idea behind this project was to create a site that shows if a game is <strong>good or not</strong> based on <strong>external resourses</strong>, including Twitch Popularity and Google Popularity</p>
+
+<h3 id="preview">Preview</h3>
+
+<pre><code>This image shows a working version of the website
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/GameSearch1.png'  alt="" /></p>
+
+<pre><code>This is a poor version of the Home Page
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/GameSearch2.png'  alt="" /></p>
+
+<pre><code>The Twitch Popularity and Score Information
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/GameSearch3.png'  alt="" /></p>]]></description><link>http://kauegimenes.github.io/game-search-a-php-website/</link><guid isPermaLink="false">cba5d3dd-eb4b-42e7-a6f3-ac4a7beaa2a5</guid><dc:creator><![CDATA[Kauê Gimenes]]></dc:creator><pubDate>Mon, 12 May 2014 03:52:11 GMT</pubDate></item><item><title><![CDATA[Price Check - A WP7 Application]]></title><description><![CDATA[<p>This app works using a Brazlian website (MercadoLivre) to predict the ideal price for any product, new or used, based on the average products price listed on <strong>MercadoLivre</strong>.  The app shows the <strong>Max, Lowest and the Average</strong> price with this information the user is able to sell the product based on the current market price.</p>
+
+<h3 id="code">Code</h3>
+
+<p>The programming language used for this project was Visual Basic .Net for Windows Phone 7. At the time i liked <strong>VB</strong> over <strong>C#</strong> but today is clear C# has a bigger community in Windows Phone development.</p>
+
+<h3 id="why">Why</h3>
+
+<p>The idea was to make a application to help people sell products or have an idea about the price of one product they are thinking about buying. Thats why its a <strong>simple and fast</strong> application.</p>
+
+<h3 id="preview">Preview</h3>
+
+<pre><code>Here is a picture of the application, the language is Brazilian Portuguese.
+</code></pre>
+
+<p><img src='http://kauegimenes.github.io/content/images/2014/May/PriceCheck1.png'  alt="" /></p>]]></description><link>http://kauegimenes.github.io/price-check-a-windows-phone-7-application/</link><guid isPermaLink="false">cf2f96db-53cc-4f2d-b310-b50820dae6bc</guid><dc:creator><![CDATA[Kauê Gimenes]]></dc:creator><pubDate>Sun, 11 May 2014 21:24:37 GMT</pubDate></item></channel></rss>
